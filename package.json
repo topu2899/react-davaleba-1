@@ -1,0 +1,36 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "Blog api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Misha Kirichenko",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "mongoose": "^7.5.3",
+    "nodemailer": "^6.9.7"
+  },
+  "_moduleAliases": {
+    "@config": "./src/config",
+    "@events": "./src/events",
+    "@root": "./src",
+    "@utils": "./src/utils",
+    "@models": "./src/models",
+    "@constants": "./src/constants",
+    "@controllers": "./src/controllers",
+    "@middlewares": "./src/middlewares"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^3.0.1"
+  }
+}
